@@ -51,7 +51,7 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="logo_label_1">
            <property name="minimumSize">
             <size>
              <width>50</width>
@@ -238,12 +238,12 @@
      </widget>
     </item>
     <item row="0" column="1">
-     <widget class="QWidget" name="full_menu_widegt" native="true">
+     <widget class="QWidget" name="full_menu_widget" native="true">
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
-          <widget class="QLabel" name="label_2">
+          <widget class="QLabel" name="logo_label_2">
            <property name="maximumSize">
             <size>
              <width>40</width>
@@ -262,7 +262,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_3">
+          <widget class="QLabel" name="logo_label_3">
            <property name="font">
             <font>
              <pointsize>15</pointsize>
@@ -656,7 +656,7 @@
   <connection>
    <sender>change_btn</sender>
    <signal>toggled(bool)</signal>
-   <receiver>full_menu_widegt</receiver>
+   <receiver>full_menu_widget</receiver>
    <slot>setHidden(bool)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -826,6 +826,38 @@
     <hint type="destinationlabel">
      <x>15</x>
      <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>559</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>274</x>
+     <y>579</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>556</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>39</x>
+     <y>573</y>
     </hint>
    </hints>
   </connection>

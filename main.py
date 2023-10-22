@@ -10,16 +10,16 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__()
         self.ui=loadUi('sidebar.ui', self)
 
-        self.ui.icon_only_widget.hide()
+        # self.ui.icon_only_widget.hide()
+        self.ui.full_menu_widget.hide()
         self.ui.stackedWidget.setCurrentIndex(0)
         self.ui.home_btn_2.setChecked(True)
 
 if __name__=="__main__":
     app = QApplication(sys.argv)
-    # style_file = QFile("style.qss")
-    # style_file.open(QFile.ReadOnly | QFile.Text)
-    # style_stream = QTextStream(style_file)
-    # app.setStyleSheet(style_stream.readAll())   
+    with open("style.qss", "r") as style_file:
+        style_str=style_file.read()
+    app.setStyleSheet(style_str)
 
     window = MainWindow()
     window.show()
