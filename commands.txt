@@ -1,0 +1,2 @@
+pyuic5.exe .\sidebar.ui -o .\sidebar_ui.py
+pyrcc5.exe .\resource.qrc -o .\resource_qr.py
